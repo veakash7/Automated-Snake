@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralSnake OS | Hamiltonian Logic</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-wrapper">
+        <aside class="sidebar-left">
+            <div class="brand">
+                <div class="logo-icon"></div>
+                <h1>NEURAL<span>SNAKE</span></h1>
+                <p class="version">v4.0 Immortal Core</p>
+            </div>
+            
+            <div class="telemetry-group">
+                <div class="metric">
+                    <label>SYNC STATUS</label>
+                    <span id="targetStatus" class="status-active">READY</span>
+                </div>
+                <div class="metric">
+                    <label>CORE LOAD</label>
+                    <div class="progress-bar"><div id="loadFill" style="width: 65%"></div></div>
+                </div>
+            </div>
+
+            <nav class="system-controls">
+                <button id="pauseBtn" class="btn-glow">HALT SYSTEM</button>
+                <button id="stepBtn" class="btn-outline" disabled>SINGLE STEP</button>
+                <button id="restartBtn" class="btn-danger">HARD REBOOT</button>
+            </nav>
+        </aside>
+
+        <main class="viewport">
+            <div class="canvas-container">
+                <div class="scanline"></div>
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                <div id="overlay" class="overlay hidden">
+                    <div class="glitch-wrapper">
+                        <h2 class="glitch" data-text="SYSTEM CRITICAL">SYSTEM CRITICAL</h2>
+                    </div>
+                    <button onclick="location.reload()">REINITIALIZE</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+            <section class="data-module">
+                <h3>VITAL STATISTICS</h3>
+                <div class="stat-row">
+                    <span>SCORE</span>
+                    <span id="score" class="digital-value">0000</span>
+                </div>
+                <div class="stat-row">
+                    <span>RECORD</span>
+                    <span id="highScore" class="digital-value">0000</span>
+                </div>
+            </section>
+
+            <section class="data-module">
+                <h3>PATH ANALYSIS</h3>
+                <div class="stat-row">
+                    <span>STRATEGY</span>
+                    <span id="strategyType" class="highlight-text">CALCULATING</span>
+                </div>
+                <div class="stat-row">
+                    <span>VECTORS</span>
+                    <span id="pathLength" class="digital-value">0</span>
+                </div>
+            </section>
+
+            <div class="speed-module">
+                <label>PROCESSOR FREQUENCY</label>
+                <input type="range" id="speedSlider" min="10" max="200" value="180">
+                <div class="range-labels"><span>SLOW</span><span>HYPER</span></div>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
