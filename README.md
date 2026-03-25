@@ -1,9 +1,4 @@
 # 🐍 NEURAL-SNAKE OS
-> **Status: SYSTEM OPERATIONAL** | **Core: IMMORTAL** | **Logic: HAMILTONIAN**
-
-![License: MIT](https://img.shields.io/badge/License-MIT-00f2ff.svg?style=for-the-badge)
-![JS: ES6+](https://img.shields.io/badge/Engine-Vanilla%20JS-39ff14.svg?style=for-the-badge)
-![Logic: Hamiltonian](https://img.shields.io/badge/Algorithm-Hamiltonian%20Cycle-ff003c.svg?style=for-the-badge)
 
 **NeuralSnake OS** is a high-fidelity AI simulation designed to solve the classic Snake game with mathematical certainty. By merging a rigid **Hamiltonian Rail** with dynamic **Shortcut Heuristics**, the system achieves a 100% win rate on any even-dimension grid.
 
