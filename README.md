@@ -1,30 +1,39 @@
-# 🐍 NeuralSnake OS | Hamiltonian AI Simulation
+# 🐍 NEURAL-SNAKE OS
+> **Status: SYSTEM OPERATIONAL** | **Core: IMMORTAL** | **Logic: HAMILTONIAN**
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Technology: Vanilla JS](https://img.shields.io/badge/Tech-Vanilla%20JS-yellow.svg)
-![Logic: Hamiltonian Cycle](https://img.shields.io/badge/Logic-Hamiltonian%20Cycle-green.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-00f2ff.svg?style=for-the-badge)
+![JS: ES6+](https://img.shields.io/badge/Engine-Vanilla%20JS-39ff14.svg?style=for-the-badge)
+![Logic: Hamiltonian](https://img.shields.io/badge/Algorithm-Hamiltonian%20Cycle-ff003c.svg?style=for-the-badge)
 
-**NeuralSnake** is a high-performance, automated Snake AI. Unlike traditional snake games, this system uses a **Hamiltonian Cycle Safety Rail** combined with **Shortcut Heuristics** to ensure the snake can fill the entire 400-tile grid without ever colliding with itself.
+**NeuralSnake OS** is a high-fidelity AI simulation designed to solve the classic Snake game with mathematical certainty. By merging a rigid **Hamiltonian Rail** with dynamic **Shortcut Heuristics**, the system achieves a 100% win rate on any even-dimension grid.
 
+---
 
+## ⚡ SYSTEM ARCHITECTURE
 
-## 🧠 Core Intelligence
+### 1. The Hamiltonian Safety Rail
+The AI's "DNA" is a pre-computed Hamiltonian Cycle—a path that visits every single tile on the $20 \times 20$ grid exactly once before returning to the origin. This ensures the snake *always* has a clear path forward.
 
-The simulation operates on a tiered decision-making process:
+### 2. Adaptive Shortcut Engine
+Following a fixed rail is safe but inefficient. Our **Shortcut Heuristic** allows the snake to "jump" across the track if:
+* The target node's index is ahead in the cycle.
+* The gap created by the shortcut does not exceed the current distance to the tail (maintaining a 2-tile safety buffer).
 
-1.  **The Safety Rail (Hamiltonian Cycle):** The system generates a pre-calculated path that visits every coordinate on the $20 \times 20$ grid exactly once before returning to the start.
-2.  **Shortcutting:** To prevent the snake from being "slow," it calculates the distance to food. If a shortcut across the rail is available, it validates the move by checking if the "skipped" distance is less than the current distance to the tail.
-3.  **Immortal Logic:** By maintaining a 2-tile buffer between the head and tail along the cycle index, the snake is mathematically guaranteed to reach the maximum possible score (4000).
+### 3. Telemetry & Monitoring
+* **Vector Analysis:** Real-time calculation of path efficiency.
+* **Logic Switching:** Dynamic toggling between `Following Rail` and `Shortcut (A*)`.
+* **Clock Speed:** Adjustable simulation frequency from 10ms to 200ms.
 
-## 🚀 Key Features
+---
 
-* **Cyberpunk UI:** Glassmorphism dashboard with CRT scanline effects.
-* **Real-time Telemetry:** Live tracking of strategy modes (Rail vs. Shortcut) and path vectors.
-* **Variable Processor Frequency:** Adjust simulation speed from "Manual Step" to "Hyper-Fast."
-* **Responsive Design:** Optimized for both desktop monitoring and mobile viewports.
+## 🛠️ INSTALLATION
 
-## 🛠️ Installation & Usage
+```bash
+# Clone the Core
+git clone [https://github.com/veakash7/neural-snake.git](https://github.com/veakash7/neural-snake.git)
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/veakash7/neural-snake.git](https://github.com/veakash7/neural-snake.git)
+# Enter the Directory
+cd neural-snake
+
+# Launch Simulation
+open index.html
