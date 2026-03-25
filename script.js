@@ -1,7 +1,3 @@
-/**
- * NeuralSnake | Hamiltonian Shortcut Edition
- * Guaranteed to reach max score without self-collision.
- */
 
 const GRID_SIZE = 20;
 const CELL_SIZE = 20;
